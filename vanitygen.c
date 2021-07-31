@@ -1163,7 +1163,7 @@ main(int argc, char **argv)
 				fprintf(stderr,
 					"Generating VTC Address\n");
 					addrtype = 71;
-					privtype = 199;
+					privtype = 128;
 					break;
 			}
 			else
