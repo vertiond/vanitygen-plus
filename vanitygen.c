@@ -458,6 +458,7 @@ main(int argc, char **argv)
 					"BLK : Blackcoin : B\n"
 					"BWK : Bulwark : b\n"
 					"BQC : BBQcoin : b\n"
+					"BRWN : Browncoin : b\n"
 					"BTC : Bitcoin : 1\n"
 					"TEST : Bitcoin Testnet : m or n\n"
 					"BTCD : Bitcoin Dark : R\n"
@@ -1573,6 +1574,14 @@ main(int argc, char **argv)
 					"Generating MNC Testnet Address\n");
 					addrtype = 111;
 					privtype = 239;
+					break;
+			}
+			else
+			if (strcmp(optarg, "BRWN")== 0) {
+				fprintf(stderr,
+					"Generating BRWN Address\n");
+					addrtype = 26;
+					privtype = 153;
 					break;
 			}
 			break;
